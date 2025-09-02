@@ -10,7 +10,8 @@ import io
 
 # Define the custom MobileNetv2 layer used during training
 mobilenet_v2_layer = hub.KerasLayer(
-    "https://tfhub.dev/google/tf2-preview/mobilenet_v2/classification/4",
+    "https://tfhub.dev/google/tf2-preview/mobilenet_v2/feature_vector/4",
+    input_shape=(224, 224, 3),
     trainable=False
 )
 
